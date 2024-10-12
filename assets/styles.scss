@@ -11,8 +11,9 @@ $background-color: {{ .Site.Params.colors.background_color | default "#fcfbf9" }
 $text-color: {{ .Site.Params.colors.text_color | default "#333333" }};
 $link-color: {{ .Site.Params.colors.link_color | default "#60c17d" }};
 
-
-
+$background-color-dark: {{ .Site.Params.colors.background_color_dark | default "#474A4D" }};
+$text-color-dark: {{ .Site.Params.colors.text_color_dark | default "#f1f1f1" }};
+$link-color-dark: {{ .Site.Params.colors.link_color_dark | default "#66879C" }};
 
 /*
 Load the rest of the stylesheets.

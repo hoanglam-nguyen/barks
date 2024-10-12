@@ -1,4 +1,3 @@
-
 footer {
     width: 100%;
     text-align: center;
@@ -8,16 +7,19 @@ footer {
     font-size: small;
     color: $text-color;
 
-    .fas, .fab, .ai {
+    .fas,
+    .fab,
+    .ai {
         font-size: large;
-        transition: all .15s ease-in-out;
+        transition: all 0.15s ease-in-out;
     }
 
-    .fas:hover, .fab:hover, .ai:hover {
+    .fas:hover,
+    .fab:hover,
+    .ai:hover {
         color: $link-color;
         transform: scale(1.5);
     }
-
 }
 
 footer ul li a i {
@@ -25,14 +27,14 @@ footer ul li a i {
 }
 
 footer ul {
-	display: table;
-	margin: auto;
+    display: table;
+    margin: auto;
     padding: 0;
 }
 
 footer li {
-	list-style-type: none;
-	display: inline-block;
+    list-style-type: none;
+    display: inline-block;
     padding: 0px 10px;
 }
 
@@ -43,7 +45,32 @@ footer a {
     text-underline-offset: 3px;
 }
 
-footer a:hover  {
+footer a:hover {
     text-decoration-style: solid;
     text-decoration-color: $link-color;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        border-top: 1px solid $text-color-dark;
+        color: $text-color-dark;
+        .fas:hover,
+        .fab:hover,
+        .ai:hover {
+            color: $link-color-dark;
+            transform: scale(1.5);
+        }
+    }
+
+    footer ul li a i {
+        color: $text-color-dark;
+    }
+
+    footer a {
+        color: $text-color-dark;
+    }
+
+    footer a:hover {
+        text-decoration-color: $link-color-dark;
+    }
 }

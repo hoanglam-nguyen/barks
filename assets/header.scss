@@ -1,8 +1,7 @@
-
 header {
-	text-align: center;
-	position: static;
-	margin-top: 60px;
+    text-align: center;
+    position: static;
+    margin-top: 60px;
     line-height: 1.1;
 }
 
@@ -17,7 +16,6 @@ header .title {
 }
 
 @media only screen and (max-width: 600px) {
-
     header .title {
         margin-bottom: 10px;
     }
@@ -25,5 +23,10 @@ header .title {
     header .title {
         font-size: 44px;
     }
+}
 
+@media (prefers-color-scheme: dark) {
+    header .title {
+        color: $text-color-dark;
+    }
 }

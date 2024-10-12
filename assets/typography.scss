@@ -1,37 +1,42 @@
-
 /*
 General
 */
 
 p {
-	margin: 1em 0;
+    margin: 1em 0;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
-em, q, em, dfn {
-	font-style: italic;
+em,
+q,
+em,
+dfn {
+    font-style: italic;
 }
 
 strong {
-	font-weight: 600;
+    font-weight: 600;
 }
 
-del, s {
-	text-decoration: line-through;
+del,
+s {
+    text-decoration: line-through;
 }
 
 hr {
-	width: 50%;
-	height: 1px;
-	background: $text-color;
-	margin: 64px auto;
+    width: 50%;
+    height: 1px;
+    background: $text-color;
+    margin: 64px auto;
 }
 
-small, sub, sup { 
-    font-size: small; 
+small,
+sub,
+sup {
+    font-size: small;
 }
 
 sub {
@@ -49,13 +54,16 @@ kbd {
     padding: 0 0.25em;
 }
 
-
-
 /*
 Headings
 */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     text-align: center;
     font-weight: 700;
@@ -63,17 +71,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 26px;
+    font-size: 26px;
     margin-top: 2.4em;
 }
 
 h2 {
-	font-size: 22px;
-    margin-top: 2.0em;
+    font-size: 22px;
+    margin-top: 2em;
 }
 
 h3 {
-	font-size: 18px;
+    font-size: 18px;
     margin-top: 1.8em;
 }
 
@@ -91,8 +99,6 @@ h6 {
     font-size: 12px;
     margin-top: 1.2em;
 }
-
-
 
 /*
 Block quotes
@@ -116,21 +122,18 @@ blockquote p {
     margin: 0;
 }
 
-
-
 /*
 Lists
 */
 
-ol, ul {
+ol,
+ul {
     padding-left: 1.5em;
 }
 
 li {
     margin-bottom: 0.25em;
 }
-
-
 
 /*
 Tables
@@ -142,7 +145,7 @@ table {
     width: 90%;
 }
 
-table>tbody>tr:last-child {
+table > tbody > tr:last-child {
     border-bottom: 2px solid rgba(invert($background-color), 0.2);
 }
 
@@ -155,8 +158,6 @@ th {
 td {
     padding: 0.25em;
 }
-
-
 
 /*
 Footnotes
@@ -186,17 +187,26 @@ Footnotes
     padding: 0 1px;
 }
 
-
-
 /*
 LaTeX / KaTeX
 */
 
-.katex { 
+.katex {
     font-size: 1.1em !important;
 }
 
 span .katex-display {
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+// Dark mode
+@media (prefers-color-scheme: dark) {
+    hr {
+        background: $text-color-dark;
+    }
+
+    kbd {
+        border: 1px solid $text-color-dark;
+    }
 }
