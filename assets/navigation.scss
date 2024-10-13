@@ -17,7 +17,7 @@ nav a::after {
     content: "";
     display: block;
     width: 0;
-    height: 4px;
+    height: 2px;
     background: $link-color;
     transition: width 0.25s;
 }
@@ -41,8 +41,8 @@ nav li {
 }
 
 nav li + li:before {
-    content: "●";
-    padding: 16px;
+    content: "";
+    padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
